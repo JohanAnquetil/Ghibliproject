@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin: 1% 10% 10% 10%;
+}
+
+
+/* #header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#ghibli_logo {
+    width: 100%;
+}
+
+#box-timeline {
+    margin: 10%;
+    position: relative;
+    /* padding: 80px 0 450px 0; */
+}
+
+.ligne {
+    height: 4200px;
+    width: 8px;
+    margin: 0 auto;
+    background: #333;
+}
+
+.rond {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    border: 1px solid #000;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+.r1 {
+    top: 0px;
+    background-image: url('calcifer_emoji.png');
+    background-size: contain;
+}
+
+.box {
+    color: #333;
+    min-width: 250px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    height: auto;
+    background: #f1f1f1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+}
+
+.box:hover {
+    opacity: 0.5;
+}
+
+.b1 {
+    top: 0px;
+    left: calc(50% - 270px);
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+    font-family: Impact;
+}
+
+.box a {
+    color: #000;
+    font-family: Impact;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.box a {
+    color: #000;
+    font-family: Impact;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    padding-top: 0;
+    text-decoration: underline;
+}
+
+#director {
+    /* margin: 20% 0 10% 0; */
+    /* padding-top: 50px; */
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    /* background: floralwhite; */
+    /* padding-bottom: 80px; */
+}
+
+#background {
+    background: linear-gradient(rgba(239, 201, 76, 0.20), rgba(239, 201, 157, 0.20)), url(https://variety.com/wp-content/uploads/2013/09/hayao-miyazaki.jpg) no-repeat fixed center;
+    height: 600px;
+    position: relative;
+}
+
+
+
+#background a {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-decoration: none;
+}
+
+/* #director img {
+    border-radius: 50%;
+    max-width: 380px;
+    margin: 3%;
+} */
+
+#director div p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    /* width: 80%; */
+    margin: 5%;
+    /* text-align: center; */
+}
+
+#director div h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    font-size: 4em;
+    letter-spacing: 0.5rem;
+}
+
+/* marquee {
+    /* border: 2px solid; */
+/* width: 100%; */
+/* height: 100%; 
+}
+
+*/
+/* marquee img {
+    /* height: 100%; 
+    width: 50%;
+} */
+
+.tailleImage {
+    width: 250px;
+}
+
+
+/* menu */
+/* nav {
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+} */
+
+nav ul {
+    font-family: Cabin;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+nav ul .menuItem {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border-right: black 1px solid;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    font-family: Cabin;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0 px;
+}
+
+nav a:hover {
+    color: orange;
+    transform: skewX(10deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    z-index: 1000;
+}
+
+#sous2 {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    z-index: 1000;
+}
+
+nav>ul li:hover #sous {
+    display: block;
+}
+
+nav>ul li:hover #sous2 {
+    display: block;
+}
+
+#sous li {
+    /* float :none;
+    width :100%; */
+    /* flex-grow: 2; */
+    text-align: left;
+    font-size: 15px;
+}
+
+#sous2 li {
+    /* float :none;
+    width :100%; */
+    text-align: left;
+    /* flex-grow: 2; */
+    font-size: 15px;
+}
+
+#sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+#sous2 a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+#sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+}
+
+#sous2 a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    /* content: " :camera: "; */
+    font-size: 25px;
+}
+
+#containerSubmenu {
+    display: flex;
+    position: absolute;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
