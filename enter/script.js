@@ -13,7 +13,7 @@ let titlesTimeline = document.getElementsByClassName('films_title_timeline');
 function scrollTitles(result) {
 
     for (i = 0; i < result.length; i++) {
-        list.innerHTML += `<option value="films_page/pages_index.html?film=${result[i].title}" class="title"> ${result[i].title}</option>`;
+        list.innerHTML += `<option value="../films_page/pages_index.html?film=${result[i].title}" class="title"> ${result[i].title}</option>`;
 
     }
 
@@ -33,7 +33,7 @@ function displayTimelineRound(result) {
     }
 
     for (i = 0; i < result.length; i++) {
-        box.innerHTML += `<div class="box b${i + 1}" data-anim="${i + 1}"><h2><a href="films_page/pages_index.html?film=${result[i].title}">${result[i].title}</a></h2><p>${result[i].release_date}</p></div>`;
+        box.innerHTML += `<div class="box b${i + 1}" data-anim="${i + 1}"><h2><a href="../films_page/pages_index.html?film=${result[i].title}">${result[i].title}</a></h2><p>${result[i].release_date}</p></div>`;
     }
 
 }

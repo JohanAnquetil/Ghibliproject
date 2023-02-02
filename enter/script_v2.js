@@ -32,10 +32,10 @@ function scrollTitles(array) {
     //     window.location.href = valeur;
     // })
     for (i = 0; i < array.length / 2; i++) {
-        list.innerHTML += `<li><a href="/films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></li>`
+        list.innerHTML += `<li><a href="../films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></li>`
     }
     for (i = array.length / 2; i < array.length; i++) {
-        list2.innerHTML += `<li><a href="/films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></li>`
+        list2.innerHTML += `<li><a href="../films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></li>`
     }
 }
 
@@ -53,7 +53,7 @@ function displayTimeline(array) {
     }
 
     for (i = 0; i < array.length; i++) {
-        box.innerHTML += `<div class="box b${i + 1}" data-anim="${i + 1}"><h2><a href="/films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></h2><p>${array[i].release_date}</p></div>`;
+        box.innerHTML += `<div class="box b${i + 1}" data-anim="${i + 1}"><h2><a href="../films_page/pages_index.html?film=${array[i].title}">${array[i].title}</a></h2><p>${array[i].release_date}</p></div>`;
     }
 
 

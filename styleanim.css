@@ -31,6 +31,10 @@ h1 span {
 .container {
     text-align: center;
     perspective: 1000px;
+    margin:auto;
+    width:80%;
+    color:black;
+
 }
 
 #hover {
